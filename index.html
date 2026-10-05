@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Tidemark – Tide times for coastal walkers</title>
+    <meta
+      name="description"
+      content="Tidemark shows safe crossing windows, tide heights and cut-off warnings for coastal walks."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header>
+      <nav class="wrap nav" aria-label="Main">
+        <a class="logo" href="#top">Tidemark</a>
+        <button
+          class="menu-btn"
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
+        <ul class="links" id="menu">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#start">Get started</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" style="padding: 0">
+        <div class="wrap">
+          <div>
+            <h1 class="rise">Cross the sands before the sea does.</h1>
+            <p class="rise d2">
+              Tidemark shows safe crossing windows, live tide heights and
+              cut-off alerts for coastal walks, so you know when to turn back.
+            </p>
+            <div class="cta rise d2">
+              <a class="btn" href="#start">Download the app</a>
+              <a class="btn ghost" href="#features">See how it works</a>
+            </div>
+          </div>
+          <aside class="gauge rise d2" aria-label="Example tide reading">
+            <small>Morecambe Bay crossing</small>
+            <div class="h"><span id="height">0.0</span> m</div>
+            <div
+              class="bar"
+              role="img"
+              aria-label="Tide at 72 percent of the way to high water"
+            >
+              <i id="fill"></i>
+            </div>
+            <small>Rising. Cut-off in 1 h 20 min</small>
+          </aside>
+        </div>
+        <svg
+          class="wave"
+          viewBox="0 0 1200 70"
+          preserveAspectRatio="none"
+          aria-hidden="true"
+        >
+          <path
+            class="w1"
+            d="M0 35 Q150 0 300 35 T600 35 T900 35 T1200 35 T1500 35 T1800 35 T2100 35 T2400 35 V70 H0Z"
+          />
+        </svg>
+      </section>
+
+      <section id="features">
+        <div class="wrap">
+          <h2>Built for people who walk the edge of the sea</h2>
+          <p class="lead">
+            Everything you need to plan a crossing and stay on the safe side of
+            the tide.
+          </p>
+          <div class="grid">
+            <article class="card reveal">
+              <div class="ico" aria-hidden="true">🌊</div>
+              <h3>Crossing windows</h3>
+              <p>
+                See the exact hours a route is passable, adjusted for the day's
+                tide and local conditions.
+              </p>
+            </article>
+            <article class="card reveal">
+              <div class="ico" aria-hidden="true">🔔</div>
+              <h3>Cut-off alerts</h3>
+              <p>
+                Get a notification when the way back is about to close, based on
+                your walking pace.
+              </p>
+            </article>
+            <article class="card reveal">
+              <div class="ico" aria-hidden="true">📴</div>
+              <h3>Works offline</h3>
+              <p>
+                Download a week of tide tables and route maps before you lose
+                signal on the shore.
+              </p>
+            </article>
+            <article class="card reveal">
+              <div class="ico" aria-hidden="true">🧭</div>
+              <h3>Local route notes</h3>
+              <p>
+                Quicksand zones, channel crossings and guide meeting points,
+                written by local walkers.
+              </p>
+            </article>
+            <article class="card reveal">
+              <div class="ico" aria-hidden="true">👥</div>
+              <h3>Share your plan</h3>
+              <p>Send your route and turn-back time to a friend in one tap.</p>
+            </article>
+            <article class="card reveal">
+              <div class="ico" aria-hidden="true">🌙</div>
+              <h3>Light and dark modes</h3>
+              <p>
+                A readable display at dawn on the sand or late at night on the
+                pier.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="start">
+        <div class="wrap">
+          <div>
+            <h2>Plan your next crossing</h2>
+            <p style="margin: 0">Free on iOS and Android. No account needed.</p>
+          </div>
+          <a class="btn" href="#contact">Get the app</a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="wrap">
+        <div class="foot">
+          <div>
+            <h4>Tidemark</h4>
+            <p style="margin: 0; max-width: 26rem">
+              Tide times and crossing safety for coastal walkers.
+            </p>
+          </div>
+          <nav aria-label="Footer">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#start">Get started</a></li>
+              <li><a href="#top">Back to top</a></li>
+            </ul>
+          </nav>
+          <address style="font-style: normal">
+            <h4>Contact</h4>
+            <ul>
+              <li>
+                <a href="mailto:hello@tidemark.example"
+                  >hello@tidemark.example</a
+                >
+              </li>
+              <li>LAGOS, NIGERIA</li>
+            </ul>
+          </address>
+        </div>
+        <p class="copy">© 2026 Tidemark. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
